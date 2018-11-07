@@ -1,0 +1,33 @@
+h1{
+    color:Black;
+}
+form{
+    color:white;
+    text-align:left;
+    Border:2px  solid #0080ff;
+    border-radius:10px;
+    background-color:#0080ff;
+}
+div{
+
+    position:absolute;
+
+}
+.SubButton{
+    font-size:1em;
+    border:2px dashed white;
+
+}
+h2 {
+    color:black;
+    position:fixed;
+    top:300px;
+
+}
+iframe{
+
+    position:fixed;
+    bottom:0px;
+    width:500px;
+    height:400px;
+}
