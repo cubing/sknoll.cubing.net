@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
   <style>
-    a{
-     border: solid 2px #0080ff;
+    nav {
+     position:fixed;
+     top:0px;
      background-color:#0080ff;
-     position:absolute;
-      color:#FFFFFF;
-      border-radius:10px;
-      margin:15px;
+      
+    }
+    li{
+     list-style-type:none;
+      display:inline;
+    }
+    .active{
+     background-color:#808080; 
     }
     a:hover{
       font-weight:bold;
-    }
-    a:visited{
-      border: solid 2px #0080ff;
-     background-color:#0080ff;
-     position:absolute;
-      color:#FFFFFF;
-        border-radius:10px;
     }
     
       h1{
@@ -29,13 +27,18 @@
   <meta charset="utf-8">
   <title>sknoll.cubing.net</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!--<link rel="shortcut icon" type="image/png" href="/favicon.png"/>-->
 </head>
 
 <body>
   <h1>Welcome to sknoll.cubing.net<br><span class="head">Your resource for the newest cubing programs<br>ranging from 5x5+ to Blindfolded</span></h1>
-  <a href="l4e.html">L4E Trainer</a>
-    <br>
-  <a href="blddb.html">3 style trainer/database</a>
+  <nav>
+    <ul>
+      <li><a href="index.html>Home</a></li>
+        <li><a href="l4e.html">L4E Trainer</a></li>
+        <li><a href="blddb.html">3 style trainer/database</a></li>
+    </ul>
+  </nav>
 </body>
 
 </html>
