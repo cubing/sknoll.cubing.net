@@ -5,61 +5,35 @@
 <script src="https://d3js.org/d3-fetch.v1.min.js"></script>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Empty Project</title>
-        <script src="code.js" type="text/javascript" charset="utf-8"></script>
+        <script src="CommChoice.js" type="text/javascript" charset="utf-8"></script>
          <script type="text/javascript" src="static/js/read-csv.js"></script>
         <link href="style.css" rel="stylesheet" type="text/css">
-<style>
-    table{
-  visibility: hidden;
-}
-        </style>
+
     </head>
     <body>
        <h1>3 Style Commutator Database</h1>
-       <div id="myDIV">
-
-       </div>
+      <h3>Capitalization Matters to decide specific piece</h3>
+      <h3>Piece Types Supported are Corners, Wings, Edges, Midges, X-centers, +-Centers, and Obliques </h3>
        <div>
        <form id="frm">
-           <input  type="radio" name="PieceType" value="Corners"> Corners
-           <input  type="radio" name="PieceType" value="Edges"> Edges
-           <input  type="radio" name="PieceType" value="Wings"> Wings
-           <input  type="radio" name="PieceType" value="X Centers"> X Centers <br>
-           <input  type="radio" name="PieceType" value="+ Centers"> + Centers
-           <input  type="radio" name="PieceType" value="Midges"> Midges
-           <input  type="radio" name="PieceType" value="Obliques"> Obliques <br>
-
-               Buffer:<br>
-                <input id="buf" type="text" name="PieceOne" value=""><br>
-                 Helper/Second Piece:<br>
-                <input id ="piece2" type="text" name="PieceTwo" value=""> <br>
-                Third Piece:<br>
-                <input id="piece3" type="text" name="PieceThree" value=""> <br><br>
+              <p>
+                Buffer:
+              </p>
+                <input autocomplete="off" id="buf" type="text" name="PieceOne" value=""><br>
+                 <p>
+                   Helper/Second Piece:
+                 </p>
+                <input autocomplete="off" id ="piece2" type="text" name="PieceTwo" value=""> <br>
+                <p>
+                  Third Piece:
+                </p>
+                <input autocomplete="off" id="piece3" type="text" name="PieceThree" value=""> <br><br>
                 <input class="SubButton" type="button" value="Submit" onclick="cellChoice();" ><br>
                 <br>
 
        </form>
        </div>
        <h2 id="Comm">Comm: </h2>
-       <script src="http://d3js.org/d3.v3.min.js"></script>
-
-              <script type="text/javascript">
-                  d3.text("UF.csv", function(data) {
-                      var parsedCSV = d3.csv.parseRows(data);
-
-                      var container = d3.select("body")
-                          .append("table")
-
-                          .selectAll("tr")
-                              .data(parsedCSV).enter()
-                              .append("tr")
-
-                          .selectAll("td")
-                              .data(function(d) { return d; }).enter()
-                              .append("td")
-                              .text(function(d) { return d; });
-                  });
-              </script>
               <table id="UFTable" class="table table-bordered table-hover table-condensed">
 <thead><tr><th title="Field #1">first/last</th>
 <th title="Field #2">A (UB)</th>
