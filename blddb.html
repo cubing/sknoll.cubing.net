@@ -1151,6 +1151,582 @@
       </tr>
     </tbody>
   </table>
+  <table class="table table-bordered table-hover table-condensed">
+  <thead><tr><th title="Field #1">first/last</th>
+  <th title="Field #2">A (BU)</th>
+  <th title="Field #3">B (RU)</th>
+  <th title="Field #4">C (FU)</th>
+  <th title="Field #5">D (LU)</th>
+  <th title="Field #6">E (UF)</th>
+  <th title="Field #7">F (RF)</th>
+  <th title="Field #8">H (LF)</th>
+  <th title="Field #9">J (RD)</th>
+  <th title="Field #10">K (BD)</th>
+  <th title="Field #11">L (LD)</th>
+  <th title="Field #12">M (BR)</th>
+  <th title="Field #13">N (DR)</th>
+  <th title="Field #14">O (FR)</th>
+  <th title="Field #15">P (UR)</th>
+  <th title="Field #16">Q (BL)</th>
+  <th title="Field #17">R (UL)</th>
+  <th title="Field #18">S (FL)</th>
+  <th title="Field #19">T (DL)</th>
+  <th title="Field #20">U (DB)</th>
+  <th title="Field #21">V (RB)</th>
+  <th title="Field #22">W (UB)</th>
+  <th title="Field #23">Y (LB)</th>
+  </tr></thead>
+  <tbody><tr id="DFBU">
+  <td>A (BU)</td>
+  <td> </td>
+  <td>(U&#39; M&#39; U&#39; M)2</td>
+  <td>[U M U : [M, U2]]</td>
+  <td>(U M&#39; U M)2</td>
+  <td>[U : [R&#39; F&#39; R, S]]</td>
+  <td>[U : [U M&#39; U&#39;, R]]</td>
+  <td>[U&#39; : [U&#39; M&#39; U, L&#39;]]</td>
+  <td>[U&#39; R&#39; F&#39; R : [S, R2]]</td>
+  <td>[M U M&#39; U : [M&#39;, U2]]</td>
+  <td>[U L F L&#39; : [S&#39;, L2]]</td>
+  <td>[R U : [R&#39; F&#39; R, S&#39;]]</td>
+  <td>[U : [R&#39; F&#39; R, S&#39;]]</td>
+  <td>[U&#39; M&#39; : [U, l E&#39; l&#39;]]</td>
+  <td>[M : (U M U M&#39;)2]</td>
+  <td>[R&#39; F&#39; R : [R E&#39; R&#39;, U]]</td>
+  <td>[M : (U&#39; M U&#39; M&#39;)2]</td>
+  <td>[U M&#39; : [U&#39;, r&#39; E r]]</td>
+  <td>[U&#39; : [L F L&#39;, S]]</td>
+  <td>[U : [D2, M&#39; U M]] executed as U [M U&#39; M&#39;] U2 [M&#39; U M] U</td>
+  <td>[U : [U M&#39; U&#39;, R&#39;]]</td>
+  <td> </td>
+  <td>[U&#39; : [U&#39; M&#39; U, L]]</td>
+  </tr>
+  <tr id="DFRU">
+  <td>B (RU)</td>
+  <td>(M&#39; U M U)2</td>
+  <td> </td>
+  <td>[R U&#39; R&#39; U, M&#39;]</td>
+  <td>[M U : [M, U2]]</td>
+  <td>[M u&#39; : M&#39; u2 M&#39; u2]</td>
+  <td>[U M&#39; U&#39;, R]</td>
+  <td>[U : [M&#39;, U L&#39; U&#39;]]</td>
+  <td>[S&#39; U : [M&#39;, U2]]</td>
+  <td>[U D : [S&#39;, R F R&#39;]]</td>
+  <td>[L F L&#39; : [S&#39;, L2]]</td>
+  <td>[S&#39; R&#39; U : [M&#39;, U2]]</td>
+  <td>[R&#39; F&#39; R, S&#39;]</td>
+  <td>[L F L&#39; U : [M&#39;, U2]]</td>
+  <td> </td>
+  <td>[M&#39; : [U&#39;, R E&#39; R&#39;]]</td>
+  <td>[R&#39; F&#39; R, S]</td>
+  <td>[M&#39; : [U&#39;, r&#39; E r]]</td>
+  <td>[l&#39; : [U&#39;, R&#39; E R]]</td>
+  <td>[D2, M&#39; U M] execute as [M U&#39; M&#39;] U2 [M&#39; U M] U2</td>
+  <td>[U M&#39; U&#39;, R&#39;]</td>
+  <td>[M : [R U&#39; R&#39; U, M2]]</td>
+  <td>[l U : [M, U2]]</td>
+  </tr>
+  <tr id="DFFU">
+  <td>C (FU)</td>
+  <td>[U&#39; M U : [M, U2]]</td>
+  <td>[M&#39;, R U&#39; R&#39; U]</td>
+  <td> </td>
+  <td>[M&#39;, L&#39; U L U&#39;]</td>
+  <td> </td>
+  <td>[M&#39;, U&#39; R U]</td>
+  <td>[M&#39;, U L&#39; U&#39;]</td>
+  <td>[D&#39; L F&#39; : [E&#39;, L2]]</td>
+  <td>[D : [S&#39;, R F R&#39;]]</td>
+  <td>[D R&#39; F : [E, R2]]</td>
+  <td>[D R D&#39;, M]</td>
+  <td>[U&#39; : [R&#39; F&#39; R, S&#39;]]</td>
+  <td>[F&#39; : [R U&#39; R&#39;, E]]</td>
+  <td>[R&#39; F&#39; : [R U&#39; R&#39;, E]]</td>
+  <td>[D&#39; L&#39; D, M]</td>
+  <td>[L F : [L&#39; U L, E&#39;]]</td>
+  <td>[F : [L&#39; U L, E&#39;]]</td>
+  <td>[U : [r U r&#39;, S]]</td>
+  <td>[U : [D2, M&#39; U&#39; M]] executed as U [M U M&#39;] U2 [M&#39; U&#39; M] U</td>
+  <td>[M&#39;, U&#39; R&#39; U]</td>
+  <td>[U&#39; : [R&#39; F&#39; R, S]]</td>
+  <td>[M&#39;, U L U&#39;]</td>
+  </tr>
+  <tr id="DFLU">
+  <td>D (LU)</td>
+  <td>(M&#39; U&#39; M U&#39;)2</td>
+  <td>[M U&#39; : [M, U2]]</td>
+  <td>[L&#39; U L U&#39;, M&#39;]</td>
+  <td> </td>
+  <td>[M u : M&#39; u2 M&#39; u2]</td>
+  <td>[U&#39; : [M&#39;, U&#39; R U]]</td>
+  <td>[U&#39; M&#39; U, L&#39;]</td>
+  <td>[R&#39; F&#39; R : [S, R2]]</td>
+  <td>[U&#39; D : [S&#39;, R F R&#39;]]</td>
+  <td>[S U&#39; : [M&#39;, U2]]</td>
+  <td>[M&#39; : [U, L&#39; E L]]</td>
+  <td>[r : [U, L E&#39; L&#39;]]</td>
+  <td>[M&#39; : [U, l E&#39; l&#39;]]</td>
+  <td>[r U r&#39;, S&#39;]</td>
+  <td>[S L U&#39; : [M&#39;, U2]]</td>
+  <td> </td>
+  <td>[R&#39; F&#39; R U&#39; : [M&#39;, U2]]</td>
+  <td>[r U r&#39;, S]</td>
+  <td>[D2, M&#39; U&#39; M] executed as [M U M&#39;] U2 [M&#39; U&#39; M] U2</td>
+  <td>[r&#39; U&#39; : [M, U2]]</td>
+  <td>[M : [L&#39; U L U&#39;, M2]]</td>
+  <td>[U&#39; M&#39; U, L]</td>
+  </tr>
+  <tr id="DFUF">
+  <td>E (UF)</td>
+  <td>[U : [S, R&#39; F&#39; R]]</td>
+  <td>[M u : M u2 M u2]</td>
+  <td> </td>
+  <td>[M u&#39; : M u2 M u2]</td>
+  <td> </td>
+  <td>[R2&#39; F : [R2, E]]</td>
+  <td>[L2 F&#39; : [L2, E&#39;]]</td>
+  <td>[R&#39; F : [R2, E]]</td>
+  <td>[D&#39; : [R F R&#39;, S&#39;]]</td>
+  <td>[L F&#39; : [L2, E&#39;]]</td>
+  <td>[U D&#39; L&#39; : [E, L2]]</td>
+  <td>[D&#39;, M&#39; U2 M]</td>
+  <td>[U D&#39; L : [E&#39;, L2]]</td>
+  <td>[M U2 M, U]</td>
+  <td>[U&#39; D R : [E&#39;, R2]]</td>
+  <td>[M U2 M, U&#39;]</td>
+  <td>[U&#39; D R&#39; : [E, R2]]</td>
+  <td>[D, M&#39; U2 M]</td>
+  <td>M u2 M u2</td>
+  <td>[F : [R2, E]]</td>
+  <td>[U2, M&#39;]</td>
+  <td>[F&#39; : [L2, E&#39;]]</td>
+  </tr>
+  <tr id="DFRF">
+  <td>F (RF)</td>
+  <td>[U : [R, U M&#39; U&#39;]]</td>
+  <td>[R, U M&#39; U&#39;]</td>
+  <td>[U&#39; R U, M&#39;]</td>
+  <td>[U&#39; : [U&#39; R U, M&#39;]]</td>
+  <td>[R2&#39; F : [E, R2]]</td>
+  <td> </td>
+  <td>[x M2 U : [M, U2]]</td>
+  <td>[R : [U M&#39; U&#39;, R]]</td>
+  <td>[D&#39; R&#39; D, M]</td>
+  <td>[M&#39; U L : [E&#39;, L2]]</td>
+  <td>[F&#39;, R S&#39; R&#39;]</td>
+  <td>[S&#39; : [R, U M&#39; U&#39;]]</td>
+  <td> </td>
+  <td>[L F : [L&#39; S&#39; L, F]]</td>
+  <td>[r : [U&#39;, r E&#39; r&#39;]]</td>
+  <td>[F&#39;, R S R&#39;]</td>
+  <td>[r U&#39; r&#39;, E]</td>
+  <td>[F&#39;, R&#39; S&#39; R]</td>
+  <td>[R : [D2, M&#39; U M]] execute as R [M U&#39; M&#39;] U2 [M&#39; U M] U2 R&#39;</td>
+  <td>[R : [U M&#39; U&#39;, R2]]</td>
+  <td>[M : [U&#39; R U, M2]]</td>
+  <td>[l&#39; U L : [E&#39;, L2]]</td>
+  </tr>
+  <tr id="DFLF">
+  <td>H (LF)</td>
+  <td>[U&#39; : [L&#39;, U&#39; M&#39; U]]</td>
+  <td>[U : [U L&#39; U&#39;, M&#39;]]</td>
+  <td>[U L&#39; U&#39;, M&#39;]</td>
+  <td>[L&#39;, U&#39; M&#39; U]</td>
+  <td>[L2 F&#39; : [E&#39;, L2]]</td>
+  <td>[x M2 U&#39; : [M, U2]]</td>
+  <td> </td>
+  <td>[M&#39; U&#39; R&#39; : [E, R2]]</td>
+  <td>[D L D&#39;, M]</td>
+  <td>[L&#39; : [U&#39; M&#39; U, L&#39;]]</td>
+  <td>[l&#39; : [U, l&#39; E l]]</td>
+  <td>[F, L S L&#39;]</td>
+  <td>[R&#39; F R, E&#39;]</td>
+  <td>[F, L&#39; S&#39; L]</td>
+  <td>[R&#39; F R, E]</td>
+  <td>[R&#39; F&#39; : [R S R&#39;, F&#39;]]</td>
+  <td> </td>
+  <td>[S : [L&#39;, U&#39; M&#39; U]]</td>
+  <td>[L&#39; : [D2, M&#39; U&#39; M]] executed as L&#39; [M U M&#39;] U2 [M&#39; U&#39; M] U2 L</td>
+  <td>[r U&#39; R&#39; : [E, R2]]</td>
+  <td>[M : [U L&#39; U&#39;, M2]]</td>
+  <td>[L&#39; : [U&#39; M&#39; U, L2]]</td>
+  </tr>
+  <tr id="DFRD">
+  <td>J (RD)</td>
+  <td>[U&#39; R&#39; F&#39; R&#39; : [S, R2]]</td>
+  <td>[S&#39; U&#39; : [M&#39;, U2]]</td>
+  <td>[D&#39; L F&#39; : [L2, E&#39;]]</td>
+  <td>[R&#39; F&#39; R&#39; : [S, R2]]</td>
+  <td>[R&#39; F : [E, R2]]</td>
+  <td>[R : [R, U M&#39; U&#39;]]</td>
+  <td>[M&#39; U&#39; R : [E, R2]]</td>
+  <td> </td>
+  <td>[D&#39; : [S, L&#39; F L]]</td>
+  <td>[M&#39; D : [M, D2]]</td>
+  <td>[R&#39; f&#39; R&#39; : [S, R2]]</td>
+  <td> </td>
+  <td>[S&#39; : [U&#39; M2 U, R]]</td>
+  <td>[R F&#39; R&#39;, S]</td>
+  <td>[S&#39; L U&#39; : [M&#39;, U2]]</td>
+  <td>[U&#39; R&#39; F : [E, R2]]</td>
+  <td>[S&#39; L&#39; U&#39; : [M&#39;, U2]]</td>
+  <td>[R F&#39; R&#39;, S&#39;]</td>
+  <td>[S&#39; u : M u2 M u2]</td>
+  <td>[R2 : [U M&#39; U&#39;, R]]</td>
+  <td>[U : [R F&#39; R&#39;, S]]</td>
+  <td>[R&#39; F&#39; : [E&#39;, R2]]</td>
+  </tr>
+  <tr id="DFBD">
+  <td>K (BD)</td>
+  <td>[M U&#39; M&#39; U : [M&#39;, U2]]</td>
+  <td>[U D : [R F R&#39;, S&#39;]]</td>
+  <td>[D : [R F R&#39;, S&#39;]]</td>
+  <td>[U&#39; D : [R F R&#39;, S&#39;]]</td>
+  <td>[D&#39; : [S&#39;, R F R&#39;]]</td>
+  <td>[M, D&#39; R&#39; D]</td>
+  <td>[M, D L D&#39;]</td>
+  <td>[D&#39; : [L&#39; F L, S]]</td>
+  <td> </td>
+  <td>[D : [R F&#39; R&#39;, S&#39;]]</td>
+  <td>[M : [M, U R&#39; U&#39;]]</td>
+  <td>[D&#39; : [S&#39;, R F&#39; R&#39;]]</td>
+  <td>[M : [M, U R U&#39;]]</td>
+  <td>[U D&#39; : [S&#39;, R F R&#39;]]</td>
+  <td>[M : [M, U&#39; L U]]</td>
+  <td>[U&#39; D&#39; : [S&#39;, R F R&#39;]]</td>
+  <td>[M : [M, U&#39; L&#39; U]]</td>
+  <td>[D : [S, L&#39; F L]]</td>
+  <td> </td>
+  <td>[M, D&#39; R D]</td>
+  <td>[D&#39; : [S&#39;, R&#39; B&#39; R]]</td>
+  <td>[M, D L&#39; D&#39;]</td>
+  </tr>
+  <tr id="DFLD">
+  <td>L (LD)</td>
+  <td>[U L F L : [S&#39;, L2]]</td>
+  <td>[L F L : [S&#39;, L2]]</td>
+  <td>[D R&#39; F : [R2, E]]</td>
+  <td>[S U : [M&#39;, U2]]</td>
+  <td>[L F&#39; : [E&#39;, L2]]</td>
+  <td>[M&#39; U L&#39; : [E&#39;, L2]]</td>
+  <td>[L&#39; : [L&#39;, U&#39; M&#39; U]]</td>
+  <td>[M&#39; D&#39; : [M, D2]]</td>
+  <td>[D : [S&#39;, R F&#39; R&#39;]]</td>
+  <td> </td>
+  <td>[S R&#39; U : [M&#39;, U2]]</td>
+  <td>[L&#39; F L, S]</td>
+  <td>[S R U : [M, U2]]</td>
+  <td>[U L F&#39; : [E&#39;, L2]]</td>
+  <td>[L f L : [S&#39;, L2]]</td>
+  <td>[L&#39; F L, S&#39;]</td>
+  <td>[S : [U M2 U&#39;, L&#39;]]</td>
+  <td> </td>
+  <td>[S u&#39; : M u2 M u2]</td>
+  <td>[L F : [E, L2]]</td>
+  <td>[U&#39; : [L&#39; F L, S&#39;]]</td>
+  <td>[L2 : [U&#39; M&#39; U, L&#39;]]</td>
+  </tr>
+  <tr id="DFBR">
+  <td>M (BR)</td>
+  <td>[R U : [S&#39;, R&#39; F&#39; R]]</td>
+  <td>[U M&#39; : [U R&#39; U&#39;, M&#39;]]</td>
+  <td>[M&#39; : [U R&#39; U&#39;, M&#39;]]</td>
+  <td>[M&#39; : [L&#39; E L, U]]</td>
+  <td>[U D&#39; L : [E, L2]]</td>
+  <td>[R S&#39; R&#39;, F&#39;]</td>
+  <td>[l&#39; : [l&#39; E l, U]]</td>
+  <td>[R&#39; f&#39; R : [S, R2]]</td>
+  <td>[D R D&#39;, M&#39;]</td>
+  <td>[S R&#39; U&#39; : [M&#39;, U2]]</td>
+  <td> </td>
+  <td>[R&#39; : [U&#39; M2 U, R&#39;]]</td>
+  <td>[R&#39; : [U&#39; M2 U, R2]]</td>
+  <td>[R&#39;, U&#39; M2 U]</td>
+  <td>[R&#39; D R : [E&#39;, R2]]</td>
+  <td>[D&#39; L : [E, L2]]</td>
+  <td>[R&#39; D R&#39; : [E, R2]]</td>
+  <td>[M2 U&#39; L&#39; : [E, L2]]</td>
+  <td>[R&#39; u : M u2 M u2]</td>
+  <td> </td>
+  <td>[U R&#39; U&#39;, M2]</td>
+  <td>[R D R&#39;, E&#39;]</td>
+  </tr>
+  <tr id="DFDR">
+  <td>N (DR)</td>
+  <td>[U : [S&#39;, R&#39; F&#39; R]]</td>
+  <td>[S&#39;, R&#39; F&#39; R]</td>
+  <td>[U&#39; : [S&#39;, R&#39; F&#39; R]]</td>
+  <td>[r : [L E&#39; L&#39;, U]]</td>
+  <td>[M&#39; U2 M, D&#39;]</td>
+  <td>[S&#39; : [U M&#39; U&#39;, R]]</td>
+  <td>[L S L&#39;, F]</td>
+  <td> </td>
+  <td>[D&#39; : [R F&#39; R&#39;, S&#39;]]</td>
+  <td>[S, L&#39; F L]</td>
+  <td>[R2 : [U&#39; M2 U, R]]</td>
+  <td> </td>
+  <td>[R2 : [U&#39; M2 U, R&#39;]]</td>
+  <td>[R2, U&#39; M2 U]</td>
+  <td>[M2 U R&#39; : [E&#39;, R2]]</td>
+  <td>[R2 U&#39; : [M&#39;, U2]]</td>
+  <td>[M2 U R : [E, R2]]</td>
+  <td>[M2 D&#39; : [M&#39;, D2]]</td>
+  <td>[R2 u : M u2 M u2]</td>
+  <td>[S&#39; : [U M&#39; U&#39;, R&#39;]]</td>
+  <td>[U R2 U&#39;, M2]</td>
+  <td>[D, R&#39; E&#39; R]</td>
+  </tr>
+  <tr id="DFFR">
+  <td>O (FR)</td>
+  <td>[U&#39; M&#39; : [l E&#39; l&#39;, U]]</td>
+  <td>[L F L&#39; U&#39; : [M&#39;, U2]]</td>
+  <td>[M&#39; : [U R U&#39;, M&#39;]]</td>
+  <td>[M&#39; : [l E&#39; l&#39;, U]]</td>
+  <td>[U D&#39; L&#39; : [E&#39;, L2]]</td>
+  <td> </td>
+  <td>[E&#39;, R&#39; F R]</td>
+  <td>[S&#39; : [R, U&#39; M2 U]]</td>
+  <td>[D R&#39; D&#39;, M&#39;]</td>
+  <td>[S R U&#39; : [M, U2]]</td>
+  <td>[R : [U&#39; M2 U, R2]]</td>
+  <td>[R : [U&#39; M2 U, R]]</td>
+  <td> </td>
+  <td>[R, U&#39; M2 U]</td>
+  <td>[R D R : [E&#39;, R2]]</td>
+  <td>[D&#39; L&#39; : [E&#39;, L2]]</td>
+  <td>[R D R&#39; : [E, R2]]</td>
+  <td>[M2 U&#39; L : [E&#39;, L2]]</td>
+  <td>[R u : M u2 M u2]</td>
+  <td>[R&#39; : [S&#39;, R&#39; F&#39; R]]</td>
+  <td>[U R U&#39;, M2]</td>
+  <td>[R&#39; : [D, R&#39; E&#39; R]]</td>
+  </tr>
+  <tr id="DFUR">
+  <td>P (UR)</td>
+  <td>[M : (M U&#39; M&#39; U&#39;)2]</td>
+  <td> </td>
+  <td>[M&#39; : [R&#39; U R U&#39;, M&#39;]]</td>
+  <td>[S&#39;, r U r&#39;]</td>
+  <td>[U, M U2 M]</td>
+  <td>[L F : [F, L&#39; S&#39; L]]</td>
+  <td>[L&#39; S&#39; L, F]</td>
+  <td>[S, R F&#39; R&#39;]</td>
+  <td>[U D&#39; : [R F R&#39;, S&#39;]]</td>
+  <td>[U L F&#39; : [L2, E&#39;]]</td>
+  <td>[U&#39; M2 U, R&#39;]</td>
+  <td>[U&#39; M2 U, R2]</td>
+  <td>[U&#39; M2 U, R]</td>
+  <td> </td>
+  <td>[D R : [E&#39;, R2]]</td>
+  <td>[U&#39; : [M&#39;, U2]]</td>
+  <td>[D R&#39; : [E, R2]]</td>
+  <td>[L2 U&#39; : [M&#39;, U2]]</td>
+  <td>[u : M u2 M u2]</td>
+  <td>[f&#39; R : [S, R2]]</td>
+  <td>[R&#39; U R U&#39;, M2]</td>
+  <td>[L : [S&#39;, L F L&#39;]]</td>
+  </tr>
+  <tr id="DFBL">
+  <td>Q (BL)</td>
+  <td>[R&#39; F&#39; R : [U, R E&#39; R&#39;]]</td>
+  <td>[M&#39; : [R E&#39; R&#39;, U&#39;]]</td>
+  <td>[M&#39; : [U&#39; L U, M&#39;]]</td>
+  <td>[U&#39; M&#39; : [U&#39; L U, M&#39;]]</td>
+  <td>[U&#39; D R&#39; : [E&#39;, R2]]</td>
+  <td>[r : [r E&#39; r&#39;, U&#39;]]</td>
+  <td>[E, R&#39; F R]</td>
+  <td>[S&#39; L U : [M&#39;, U2]]</td>
+  <td>[D&#39; L&#39; D, M&#39;]</td>
+  <td>[L f L&#39; : [S&#39;, L2]]</td>
+  <td>[R&#39; D R&#39; : [E&#39;, R2]]</td>
+  <td>[M2 U R : [E&#39;, R2]]</td>
+  <td>[R D R&#39; : [E&#39;, R2]]</td>
+  <td>[D R&#39; : [E&#39;, R2]]</td>
+  <td> </td>
+  <td>[L&#39;, U M2 U&#39;]</td>
+  <td>[F : [L&#39; U L, E]]</td>
+  <td>[L : [U M2 U&#39;, L]]</td>
+  <td>[L u&#39; : M u2 M u2]</td>
+  <td>[L&#39; D&#39; L, E]</td>
+  <td>[U&#39; L U, M2]</td>
+  <td> </td>
+  </tr>
+  <tr id="DFUL">
+  <td>R (UL)</td>
+  <td>[M : (M U M&#39; U)2]</td>
+  <td>[S, R&#39; F&#39; R]</td>
+  <td>[M&#39; : [L U&#39; L&#39; U, M&#39;]]</td>
+  <td> </td>
+  <td>[U&#39;, M U2 M]</td>
+  <td>[R S R&#39;, F&#39;]</td>
+  <td>[R&#39; F&#39; : [F&#39;, R S R&#39;]]</td>
+  <td>[U&#39; R&#39; F : [R2, E]]</td>
+  <td>[U&#39; D&#39; : [R F R&#39;, S&#39;]]</td>
+  <td>[S&#39;, L&#39; F L]</td>
+  <td>[D&#39; L&#39; : [E, L2]]</td>
+  <td>[R2 U : [M&#39;, U2]]</td>
+  <td>[D&#39; L : [E&#39;, L2]]</td>
+  <td>[U : [M&#39;, U2]]</td>
+  <td>[U M2 U&#39;, L&#39;]</td>
+  <td> </td>
+  <td>[U M2 U&#39;, L&#39;]</td>
+  <td>[L F : [E, L&#39; U L]]</td>
+  <td>[u&#39; : M u2 M u2]</td>
+  <td>[R&#39; : [S, R&#39; F&#39; R]]</td>
+  <td>D R U R&#39; U&#39; R&#39; U&#39; R&#39; U R U D&#39;</td>
+  <td>[f L&#39; : [S&#39;, L2]]</td>
+  </tr>
+  <tr id="DFFL">
+  <td>S (FL)</td>
+  <td>[U M&#39; : [r&#39; E r, U]]</td>
+  <td>[M&#39; : [r&#39; E r, U&#39;]]</td>
+  <td>[M&#39; : [U&#39; L&#39; U, M&#39;]]</td>
+  <td>[R&#39; F&#39; R U : [M&#39;, U2]]</td>
+  <td>[U&#39; D R : [E, R2]]</td>
+  <td>[E, r U&#39; r&#39;]</td>
+  <td> </td>
+  <td>[S&#39; L&#39; U : [M&#39;, U2]]</td>
+  <td>[D&#39; L D, M&#39;]</td>
+  <td>[S : [L&#39;, U M2 U&#39;]]</td>
+  <td>[R&#39; D R : [E, R2]]</td>
+  <td>[M2 U R&#39; : [E, R2]]</td>
+  <td>[R D R : [E, R2]]</td>
+  <td>[D R : [E, R2]]</td>
+  <td>[F : [E, L&#39; U L]]</td>
+  <td>[L&#39;, U M2 U&#39;]</td>
+  <td> </td>
+  <td>[L&#39; : [U M2 U&#39;, L&#39;]]</td>
+  <td>[L&#39; u&#39; : M u2 M u2]</td>
+  <td>[L : [D&#39;, L E L&#39;]]</td>
+  <td>[U&#39; L U, M2]</td>
+  <td>[L : [S, r U r&#39;]]</td>
+  </tr>
+  <tr id="DFDL">
+  <td>T (DL)</td>
+  <td>[U&#39; : [S, r U r&#39;]]</td>
+  <td>[l&#39; : [R&#39; E R, U&#39;]]</td>
+  <td>[U : [S&#39;, r U r&#39;]]</td>
+  <td>[S, r U r&#39;]</td>
+  <td>[M&#39; U2 M, D]</td>
+  <td>[R&#39; S&#39; R, F&#39;]</td>
+  <td>[S : [U&#39; M&#39; U, L&#39;]]</td>
+  <td>[S&#39;, R F&#39; R&#39;]</td>
+  <td>[D : [L&#39; F L, S]]</td>
+  <td> </td>
+  <td>[M2 U&#39; L : [E, L2]]</td>
+  <td>[M2 D : [M&#39;, D2]]</td>
+  <td>[M2 U&#39; L&#39; : [E&#39;, L2]]</td>
+  <td>[L2 U : [M&#39;, U2]]</td>
+  <td>[L2 : [U M2 U&#39;, L&#39;]]</td>
+  <td>[L F : [L&#39; U L, E]]</td>
+  <td>[L2 : [U M2 U&#39;, L]]</td>
+  <td> </td>
+  <td>[L2 u&#39; : M u2 M u2]</td>
+  <td>[D&#39;, L E L&#39;]</td>
+  <td>[U&#39; L2 U, M2]</td>
+  <td>[S : [U&#39; M&#39; U, L]]</td>
+  </tr>
+  <tr id="DFDB">
+  <td>U (DB)</td>
+  <td>[U : [M&#39; U M, D2]] executed as U [M&#39; U M] U2 [M U&#39; M&#39;] U</td>
+  <td>[M&#39; U M, D2] execute as [M&#39; U M] U2 [M U&#39; M&#39;] U2</td>
+  <td>[U : [M&#39; U&#39; M, D2]] executed as U [M&#39; U&#39; M] U2 [M U M&#39;] U</td>
+  <td>[M&#39; U&#39; M, D2] executed as [M&#39; U&#39; M] U2 [M U M&#39;] U2</td>
+  <td>u2 M&#39; u2 M&#39;</td>
+  <td>[R : [M&#39; U M, D2]] execute as R [M&#39; U M] U2 [M U&#39; M&#39;] U2 R&#39;</td>
+  <td>[L&#39; : [M&#39; U&#39; M, D2&#39;] executed as L&#39; [M&#39; U&#39; M] U2 [M U M&#39;] U2 L</td>
+  <td>[S&#39; u&#39; : M&#39; u2 M&#39; u2]</td>
+  <td> </td>
+  <td>[S u : M&#39; u2 M&#39; u2]</td>
+  <td>[R&#39; u&#39; : M&#39; u2 M&#39; u2]</td>
+  <td>[R2 u&#39; : M&#39; u2 M&#39; u2]</td>
+  <td>[R u&#39; : M&#39; u2 M&#39; u2]</td>
+  <td>[u&#39; : M&#39; u2 M&#39; u2]</td>
+  <td>[L u : M&#39; u2 M&#39; u2]</td>
+  <td>[u : M&#39; u2 M&#39; u2]</td>
+  <td>[L&#39; u : M&#39; u2 M&#39; u2]</td>
+  <td>[L2 u : M&#39; u2 M&#39; u2]</td>
+  <td> </td>
+  <td>[R&#39; : [M&#39; U M, D2]] execute as R&#39; [M&#39; U M] U2 [M U&#39; M&#39;] U2 R</td>
+  <td>M&#39; u2 M&#39; u2</td>
+  <td>[L : [M&#39; U&#39; M, D2]] executed as L [M&#39; U&#39; M] U2 [M U M&#39;] U2 L&#39;</td>
+  </tr>
+  <tr id="DFRB">
+  <td>V (RB)</td>
+  <td>[U : [R&#39;, U M&#39; U&#39;]]</td>
+  <td>[R&#39;, U M&#39; U&#39;]</td>
+  <td>[U&#39; R&#39; U, M&#39;]</td>
+  <td>[r&#39; U : [M, U2]]</td>
+  <td>[F : [E, R2]]</td>
+  <td>[R&#39; : [U M&#39; U&#39;, R2]]</td>
+  <td>[r U&#39; R : [E, R2]]</td>
+  <td>[R&#39; : [U M&#39; U&#39;, R&#39;]]</td>
+  <td>[D&#39; R D, M]</td>
+  <td>[L F : [L2, E]]</td>
+  <td> </td>
+  <td>[S&#39; : [R&#39;, U M&#39; U&#39;]]</td>
+  <td>[R&#39; : [R&#39; F&#39; R, S&#39;]]</td>
+  <td>[f&#39; R&#39; : [S, R2]]</td>
+  <td>[E, L&#39; D&#39; L]</td>
+  <td>[R&#39; : [R&#39; F&#39; R, S]]</td>
+  <td>[L : [L E L&#39;, D&#39;]]</td>
+  <td>[L E L&#39;, D&#39;]</td>
+  <td>[R&#39; : [D2, M&#39; U M]] execute as R&#39; [M U&#39; M&#39;] U2 [M&#39; U M] U2 R</td>
+  <td> </td>
+  <td>[M : [U&#39; R&#39; U, M2]]</td>
+  <td>[F&#39; : [E&#39;, R2]]</td>
+  </tr>
+  <tr id="DFUB">
+  <td>W (UB)</td>
+  <td> </td>
+  <td>[M : [M2, R U&#39; R&#39; U]]</td>
+  <td>[U&#39; : [S, R&#39; F&#39; R]]</td>
+  <td>[M&#39; : [L&#39; U L U&#39;, M2]]</td>
+  <td>[M&#39;, U2]</td>
+  <td>[M&#39; : [U&#39; R U, M2]]</td>
+  <td>[M&#39; : [U L&#39; U&#39;, M2]]</td>
+  <td>[U : [S, R F&#39; R&#39;]]</td>
+  <td>[D&#39; : [R&#39; B&#39; R, S&#39;]]</td>
+  <td>[U&#39; : [S&#39;, L&#39; F L]]</td>
+  <td>[M2, U R&#39; U&#39;]</td>
+  <td>[M2, U R2 U&#39;]</td>
+  <td>[M2, U R U&#39;]</td>
+  <td>[M2, R&#39; U R U&#39;]</td>
+  <td>[M2, U&#39; L U]</td>
+  <td>U&#39; D R&#39; U&#39; R U R U R U&#39; R&#39; D&#39;</td>
+  <td>[M2, U&#39; L U]</td>
+  <td>[M2, U&#39; L2 U]</td>
+  <td>M2 U2 M&#39; U2 M&#39;</td>
+  <td>[M&#39; : [U&#39; R&#39; U, M2]]</td>
+  <td> </td>
+  <td>[M&#39; : [U L U&#39;, M2]]</td>
+  </tr>
+  <tr id="DFLB">
+  <td>Y (LB)</td>
+  <td>[U&#39; : [L, U&#39; M&#39; U]]</td>
+  <td>[l U&#39; : [M, U2]]</td>
+  <td>[U L U&#39;, M&#39;]</td>
+  <td>[L, U&#39; M&#39; U]</td>
+  <td>[F&#39; : [E&#39;, L2]]</td>
+  <td>[l&#39; U L&#39; : [E&#39;, L2]]</td>
+  <td>[L : [U&#39; M&#39; U, L2]]</td>
+  <td>[R&#39; F&#39; : [R2, E&#39;]]</td>
+  <td>[D L&#39; D&#39;, M]</td>
+  <td>[L2 : [L&#39;, U&#39; M&#39; U]]</td>
+  <td>[E&#39;, R D R&#39;]</td>
+  <td>[R&#39; E&#39; R, D]</td>
+  <td>[R&#39; : [R&#39; E&#39; R, D]]</td>
+  <td>[L : [L F L&#39;, S&#39;]]</td>
+  <td> </td>
+  <td>[f L : [S&#39;, L2]]</td>
+  <td>[L : [r U r&#39;, S]]</td>
+  <td>[S : [L, U&#39; M&#39; U]]</td>
+  <td>[L : [M&#39; U&#39; M, D2]] executed as L [M&#39; U&#39; M] U2 [M U M&#39;] U2 L&#39;</td>
+  <td>[F&#39; : [R2, E&#39;]]</td>
+  <td>[M : [U L U&#39;, M2]]</td>
+  <td> </td>
+  </tr>
+  </tbody></table>
 </body>
 
 </html>
